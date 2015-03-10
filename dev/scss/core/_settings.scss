@@ -1,0 +1,47 @@
+// *************************************
+//
+// Settings
+// -> Fonts, Variables
+//
+// *************************************
+
+// -------------------------------------
+// @font-face
+// -------------------------------------
+
+// Open Sans (normal, italic, bold, bold/italic)
+@include web-fonts(("": ("300", "400", "400 italic", "800", "800 italic")));
+
+// -------------------------------------
+// Variables
+// -------------------------------------
+
+$max-width: 100rem;
+// ----- Colors ----- //
+
+$c-black : #1B1C17;
+$c-blue  : #0070AF;
+$c-white : #EFEFEF;
+$c-gold	 : #d7c490;
+$c-primary	: #392c26;
+$c-secondary: #d7c490;
+$c-tertiary	: #d7c490; 
+// ----- Layout ----- //
+$l-whiteSpace: 0.5rem;
+$l-insideGutter: 1rem;
+
+// Borders & Box-shadows
+$l-border-primary         : 1px solid $c-primary;
+$l-border-secondary		  : 1px solid $c-secondary;
+$l-border-tertiary		  : 1px solid $c-tertiary;
+$l-borderRadius   : 3px;
+$l-boxShadow      : 0 1px 2px rgba($c-black, 0.25);
+
+// ----- Text ----- //
+
+$t-fontFamily       : 'Open Sans', 'sans-serif';
+$t-headerFontFamily : 'Open Sans', 'sans-serif';
+$t-fontSize         : 14px;
+$t-lineHeight       : 1.5;
+
+$gridColSpan12Breakpoint: 640px;

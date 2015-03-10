@@ -1,0 +1,35 @@
+.Footer {
+	background:#392c26;	 
+  	color:$c-gold;
+  	padding:20px;
+ 	background-image: url(../img/pattern.png);
+  	position: relative;
+}
+
+// RESPONSIVE FOOTER
+.Footer-inner .widget {
+	@include span-columns(4);
+	@media screen and(max-width: 980px){
+		@include span-columns(12);
+	}
+}
+
+.Footer-inner {
+}
+
+//style the widgets
+.Footer-inner .widget {
+
+} 
+
+.social{
+	img{
+		float:left;
+	}
+}
+.footer-border-top{
+	@extend .header-border-bottom;
+	top:0px;
+	position: relative;
+	z-index:999;
+}
