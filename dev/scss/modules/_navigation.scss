@@ -9,7 +9,9 @@
   @include clearfix;
   text-align: center;
 }
-
+.dropdown-menu{
+  margin-top: 17px;
+}
 // -------------------------------------
 // Module specific variables
 // -------------------------------------
@@ -25,7 +27,7 @@
 // -------------------------------------
 
 .Navigation-list {
-	display: block;
+	display: block; 
 	margin: 0px;
   a{
     color:$c-gold;

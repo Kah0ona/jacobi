@@ -8,6 +8,8 @@
 .header {
   background:#392c26;
   background-image: url(../img/pattern.png);
+  position: relative;
+  z-index: 99999;
 }
 .head-row-1{
   height:85px;
@@ -15,6 +17,27 @@
 .header-border-bottom{
   height:15px;
   @include background-image(linear-gradient(to top, #695545, $c-secondary, #695545 ));
+}
+.top-search{
+  div{
+    float:right;
+  }
+  float:right;
+  margin-top:20px;
+  label{display:none;}
+  input{
+    background:none;
+    border: 1px solid $c-gold;
+    color:$c-gold;
+  }
+  #s{
+    border-right:0px;
+    width:60%;
+  }
+  #searchsubmit{
+    border-left:0px;
+    margin-left:-5px;
+  }
 }
 // -------------------------------------
 // Module specific variables
@@ -106,3 +129,222 @@
     display: block;
   }
 }
+
+#inTurnFadingTextG{
+width:370px;
+margin:0 auto;
+}
+
+.inTurnFadingTextG{
+color:#d7c490;
+font-family:Crimson text;
+font-size:70px;
+text-decoration:none;
+font-weight:normal;
+font-style:italic;
+float:left;
+-moz-animation-name:bounce_inTurnFadingTextG;
+-moz-animation-duration:1.4s;
+-moz-animation-iteration-count:infinite;
+-moz-animation-direction:linear;
+-webkit-animation-name:bounce_inTurnFadingTextG;
+-webkit-animation-duration:1.4s;
+-webkit-animation-iteration-count:infinite;
+-webkit-animation-direction:linear;
+-ms-animation-name:bounce_inTurnFadingTextG;
+-ms-animation-duration:1.4s;
+-ms-animation-iteration-count:infinite;
+-ms-animation-direction:linear;
+-o-animation-name:bounce_inTurnFadingTextG;
+-o-animation-duration:1.4s;
+-o-animation-iteration-count:infinite;
+-o-animation-direction:linear;
+animation-name:bounce_inTurnFadingTextG;
+animation-duration:1.4s;
+animation-iteration-count:infinite;
+animation-direction:linear;
+}
+
+#inTurnFadingTextG_1{
+-moz-animation-delay:0.28s;
+-webkit-animation-delay:0.28s;
+-ms-animation-delay:0.28s;
+-o-animation-delay:0.28s;
+animation-delay:0.28s;
+}
+
+#inTurnFadingTextG_2{
+-moz-animation-delay:0.35s;
+-webkit-animation-delay:0.35s;
+-ms-animation-delay:0.35s;
+-o-animation-delay:0.35s;
+animation-delay:0.35s;
+}
+
+#inTurnFadingTextG_3{
+-moz-animation-delay:0.42s;
+-webkit-animation-delay:0.42s;
+-ms-animation-delay:0.42s;
+-o-animation-delay:0.42s;
+animation-delay:0.42s;
+}
+
+#inTurnFadingTextG_4{
+-moz-animation-delay:0.49s;
+-webkit-animation-delay:0.49s;
+-ms-animation-delay:0.49s;
+-o-animation-delay:0.49s;
+animation-delay:0.49s;
+}
+
+#inTurnFadingTextG_5{
+-moz-animation-delay:0.56s;
+-webkit-animation-delay:0.56s;
+-ms-animation-delay:0.56s;
+-o-animation-delay:0.56s;
+animation-delay:0.56s;
+}
+
+#inTurnFadingTextG_6{
+-moz-animation-delay:0.63s;
+-webkit-animation-delay:0.63s;
+-ms-animation-delay:0.63s;
+-o-animation-delay:0.63s;
+animation-delay:0.63s;
+}
+
+#inTurnFadingTextG_7{
+-moz-animation-delay:0.7s;
+-webkit-animation-delay:0.7s;
+-ms-animation-delay:0.7s;
+-o-animation-delay:0.7s;
+animation-delay:0.7s;
+}
+
+#inTurnFadingTextG_8{
+-moz-animation-delay:0.77s;
+-webkit-animation-delay:0.77s;
+-ms-animation-delay:0.77s;
+-o-animation-delay:0.77s;
+animation-delay:0.77s;
+}
+
+#inTurnFadingTextG_9{
+-moz-animation-delay:0.84s;
+-webkit-animation-delay:0.84s;
+-ms-animation-delay:0.84s;
+-o-animation-delay:0.84s;
+animation-delay:0.84s;
+}
+
+#inTurnFadingTextG_10{
+-moz-animation-delay:0.91s;
+-webkit-animation-delay:0.91s;
+-ms-animation-delay:0.91s;
+-o-animation-delay:0.91s;
+animation-delay:0.91s;
+}
+
+#inTurnFadingTextG_11{
+-moz-animation-delay:0.98s;
+-webkit-animation-delay:0.98s;
+-ms-animation-delay:0.98s;
+-o-animation-delay:0.98s;
+animation-delay:0.98s;
+}
+
+#inTurnFadingTextG_12{
+-moz-animation-delay:1.05s;
+-webkit-animation-delay:1.05s;
+-ms-animation-delay:1.05s;
+-o-animation-delay:1.05s;
+animation-delay:1.05s;
+}
+
+#inTurnFadingTextG_13{
+-moz-animation-delay:1.12s;
+-webkit-animation-delay:1.12s;
+-ms-animation-delay:1.12s;
+-o-animation-delay:1.12s;
+animation-delay:1.12s;
+}
+
+#inTurnFadingTextG_14{
+-moz-animation-delay:1.19s;
+-webkit-animation-delay:1.19s;
+-ms-animation-delay:1.19s;
+-o-animation-delay:1.19s;
+animation-delay:1.19s;
+}
+
+#inTurnFadingTextG_15{
+-moz-animation-delay:1.26s;
+-webkit-animation-delay:1.26s;
+-ms-animation-delay:1.26s;
+-o-animation-delay:1.26s;
+animation-delay:1.26s;
+}
+
+#inTurnFadingTextG_16{
+-moz-animation-delay:1.33s;
+-webkit-animation-delay:1.33s;
+-ms-animation-delay:1.33s;
+-o-animation-delay:1.33s;
+animation-delay:1.33s;
+}
+
+@-moz-keyframes bounce_inTurnFadingTextG{
+0%{
+color:#d7c490;
+}
+
+100%{
+color:#392c26;
+}
+
+}
+
+@-webkit-keyframes bounce_inTurnFadingTextG{
+0%{
+color:#d7c490;
+}
+
+100%{
+color:#392c26;
+}
+
+}
+
+@-ms-keyframes bounce_inTurnFadingTextG{
+0%{
+color:#d7c490;
+}
+
+100%{
+color:#392c26;
+}
+
+}
+
+@-o-keyframes bounce_inTurnFadingTextG{
+0%{
+color:#d7c490;
+}
+
+100%{
+color:#392c26;
+}
+
+}
+
+@keyframes bounce_inTurnFadingTextG{
+0%{
+color:#d7c490;
+}
+
+100%{
+color:#392c26;
+}
+
+}
+

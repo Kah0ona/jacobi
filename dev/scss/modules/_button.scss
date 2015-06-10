@@ -4,7 +4,16 @@
 // -> All buttons
 //
 // *************************************
-
+.button-1{
+  a{
+    color:$c-secondary;
+  }
+  padding:5px;
+  color:$c-secondary;
+  border:1px solid $c-secondary;
+  border-radius:5px;
+  cursor:pointer;
+}
 .Button {
   display: inline-block;
   font-weight: bold;

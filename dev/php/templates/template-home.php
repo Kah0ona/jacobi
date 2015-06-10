@@ -7,7 +7,7 @@ Template Name: Homepage
 <?php get_header(); ?>
 <div class="slider-overlay-box">
 	<div class="slider-overlay">
-		<div class="u-gridContainer show-for-large">
+		<div class="u-gridContainer dshow-for-large">
 			<div class="u-gridCol2 product-thumb-home">
 				<a href="/kleding_categorieen/jackets/">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/jacket.png">
@@ -65,7 +65,7 @@ Template Name: Homepage
 			}
 		?>
 	</div>
-	<div class="footer-border-top show-for-small">
+<!--	<div class="footer-border-top show-for-small">
 		</div>
 	<div class="background-gradient">
 		<div class="u-gridContainer show-for-small">
@@ -107,7 +107,7 @@ Template Name: Homepage
 			</div>
 
 		</div>
-	</div>
+	</div>-->
 </div>
 
 <?php get_footer(); ?>

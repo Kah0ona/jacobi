@@ -1,5 +1,57 @@
 <?php get_header(); ?>
-<div class="product-container u-cf">
+
+
+
+<?php 
+// no default values. using these as examples
+$taxonomies = array( 
+    'kleding_categorieen'
+);
+
+$args = array(
+    'orderby'           => 'name', 
+    'order'             => 'ASC',
+    'hide_empty'        => false, 
+    'exclude'           => array(), 
+    'exclude_tree'      => array(), 
+    'include'           => array(),
+    'number'            => '', 
+    'fields'            => 'all', 
+    'slug'              => '',
+    'parent'            => '',
+    'hierarchical'      => true, 
+    'child_of'          => 0,
+    'childless'         => false,
+    'get'               => '', 
+    'name__like'        => '',
+    'description__like' => '',
+    'pad_counts'        => false, 
+    'offset'            => '', 
+    'search'            => '', 
+    'cache_domain'      => 'core'
+); 
+
+$terms = get_terms($taxonomies, $args);
+$urls = explode('/',$_SERVER['REDIRECT_URL']);
+//print_r($urls);
+$termName = $urls[2];
+$termToUse = null;
+for($i = 0; $i < count($terms); $i++) {
+	if($terms[$i]->slug == $termName) {
+		$termToUse = $terms[$i];
+	}
+}
+$background = get_field('background_image', $termToUse);
+?>
+
+<style>
+.product-container{
+	background-image: url('<?php echo $background['url']; ?>');
+}
+</style>
+
+
+<div class="product-container u-cf" >
 	
 	<div class="bar show-for-small">
 		<h3><?php the_title(); ?></h3>
@@ -37,12 +89,31 @@
 		<div class="full-width-gallery-container" >
 			<div class="product-gallery-fade-small">
 				<?php if (have_posts()) : ?>
+					
 					<?php while (have_posts()) : the_post(); ?>
+
+					
+					<?php
+					 $image1 = get_field('foto_1'); 
+					 $image2 = get_field('foto_2'); 
+					 $image3 = get_field('foto_3'); 
+					 $image4 = get_field('foto_4'); 
+					 $merk = get_field('merk'); 
+					 ?>
 				<a href="javascript:;">
 					<div class="product-thumb">
-						<div class="hidden-content"><h5><?php the_meta(merk); ?></h5><?php the_content(); ?>  </div>
+						<div class="hidden-content">
+							<div class="image-row">
+								<a href="#"><img src="<?php echo $image1['sizes']['medium']; ?>" alt="<?php echo $image1['alt']; ?>"/></a>
+					       		<a href="#"><img src="<?php echo $image2['sizes']['medium']; ?>" alt="<?php echo $image2['alt']; ?>"/></a>
+					       		<a href="#"><img src="<?php echo $image3['sizes']['medium']; ?>" alt="<?php echo $image3['alt']; ?>"/></a>
+					       		<a href="#"><img src="<?php echo $image4['sizes']['medium']; ?>" alt="<?php echo $image4['alt']; ?>"/></a>
+					       	</div>
+							<h5><?php echo $merk ?></h5>
+							<?php the_content(); ?>  
+						</div>
 						<div class="hidden-content-img">
-							<?php the_post_thumbnail(); ?>
+						    <img src="<?php echo $image1['sizes']['medium']; ?>" alt="<?php echo $image1['alt']; ?>"/>
 						</div>
 						<div class="thumb-text"> 
 							<a id="post-<?php the_ID(); ?>">
@@ -64,9 +135,7 @@
 				</nav>
 				<?php else : ?>
 			
-					<h2><?php _e('Nothing Found', ''); ?></h2>
 						
-					<?php get_search_form(); ?>
 			
 				<?php endif;?>
 			</div>

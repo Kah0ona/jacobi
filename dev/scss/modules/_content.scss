@@ -1,3 +1,39 @@
+#lang_sel_list , #lang_sel_list a:visited{
+	a{
+	background:$c-primary !important; 
+	border:none !important;
+	color:$c-primary !important;	
+	}
+	 
+	ul{
+		border-top:none !important;
+	}
+}
+.edit-h1{
+	margin-bottom:0px;
+}
+.landingspagina{
+	color:$c-secondary;
+	  -moz-column-count: 2;
+	  -moz-column-gap: 20px;
+	  -moz-column-rule: none;
+	  -webkit-column-count: 2;
+	  -webkit-column-gap: 20px;
+	  -webkit-column-rule: none;
+	column-count: 2;
+	column-gap: 20px;
+	column-rule: none;
+	margin-bottom:50px;
+}
+.gold-text{
+	color:$c-secondary;
+	h1{
+		font-weight: 100;
+	}
+}
+.gold-hr{
+	border-color:$c-secondary;
+}
 #preloader{
 	margin-top:150px;
 	width:100%;
@@ -10,7 +46,14 @@
  	padding-top:300px;
  	display:block;
 }
-
+.image-row{
+	margin-top:10px;
+	img{
+		border: 2px solid #d7c490;
+		width:24.2%;
+		
+	}
+}
 .Content {
 
 }
@@ -34,7 +77,10 @@
 	z-index:9999; 
 	bottom:10%;	
 }
-
+.hidden-content-img{
+	//height:120px;
+	overflow:hidden;
+}
 .hidden-content { display: none;}
 .gradient-overlay{
 	position:absolute;
@@ -64,8 +110,9 @@
 	float: left;
 	margin-right: 1rem;
 	margin-bottom:1rem;
+	cursor:pointer;
 	img{
-		height:120px;
+	//	height:120px;
 	}
 }
 .product-gallery-fade-small{
@@ -84,7 +131,12 @@
 	background-size:cover;
 	
 }
-
+.product-container-shoe{
+	position:relative;
+	background-image: url(../img/winkel-shoe.jpg);
+	background-size:cover;
+	
+}
 .product-wrapper{
 	margin-top:50px;
 }
@@ -148,6 +200,7 @@
 	h3{
 		font-weight: italic;
 		font-family: 'Crimson Text', serif; 
+		color:$c-primary;
 	}
 }
 .bar-text{
@@ -163,7 +216,8 @@
 	}
 	.black{
 		width:0%;
-		background:rgba(0, 0, 0, 0.8);
+		//background:rgba(0, 0, 0, 0.8);
+		background:rgba(42, 33, 28, 0.8);
 		text-align: left;
 		color:white;
 		line-height: 1;
@@ -271,6 +325,15 @@ width:100%
 #input_1_5{
 width:100%
 }
+@media all and (min-width:1440px){
+	.bx-wrapper{
+		height:650px;
+		overflow:hidden;
+		img{
+			margin-top: -300px;
+		}
+	}
+}
 @media all and (max-width:1260px){
 	.product-thumb{
 		width:22%;
@@ -287,6 +350,7 @@ width:100%
 	.contact-g{
 		width:20%;
 	}
+
 }
 @media all and (max-width:1024px){
 	.contact-g{

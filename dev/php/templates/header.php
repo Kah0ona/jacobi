@@ -20,12 +20,8 @@
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
     <!-- Favicons -->
-    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico">
+    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.ico">
     <link rel="apple-touch-icon-precomposed" href="<?php echo get_stylesheet_directory_uri(); ?>/apple-touch-icon.png">
-
-    <!-- build:remove:expanded -->
-    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/production.min.css">
-    <!-- /build -->
     <!-- build:remove:compressed -->
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/production.css">
     <!-- /build -->
@@ -40,228 +36,9 @@
 
   </head>
   <body <?php body_class(); ?> >
-<style>
-#inTurnFadingTextG{
-width:300px;
-margin:0 auto;
-}
 
-.inTurnFadingTextG{
-color:#d7c490;
-font-family:Crimson text;
-font-size:70px;
-text-decoration:none;
-font-weight:normal;
-font-style:italic;
-float:left;
--moz-animation-name:bounce_inTurnFadingTextG;
--moz-animation-duration:1.4s;
--moz-animation-iteration-count:infinite;
--moz-animation-direction:linear;
--webkit-animation-name:bounce_inTurnFadingTextG;
--webkit-animation-duration:1.4s;
--webkit-animation-iteration-count:infinite;
--webkit-animation-direction:linear;
--ms-animation-name:bounce_inTurnFadingTextG;
--ms-animation-duration:1.4s;
--ms-animation-iteration-count:infinite;
--ms-animation-direction:linear;
--o-animation-name:bounce_inTurnFadingTextG;
--o-animation-duration:1.4s;
--o-animation-iteration-count:infinite;
--o-animation-direction:linear;
-animation-name:bounce_inTurnFadingTextG;
-animation-duration:1.4s;
-animation-iteration-count:infinite;
-animation-direction:linear;
-}
 
-#inTurnFadingTextG_1{
--moz-animation-delay:0.28s;
--webkit-animation-delay:0.28s;
--ms-animation-delay:0.28s;
--o-animation-delay:0.28s;
-animation-delay:0.28s;
-}
-
-#inTurnFadingTextG_2{
--moz-animation-delay:0.35s;
--webkit-animation-delay:0.35s;
--ms-animation-delay:0.35s;
--o-animation-delay:0.35s;
-animation-delay:0.35s;
-}
-
-#inTurnFadingTextG_3{
--moz-animation-delay:0.42s;
--webkit-animation-delay:0.42s;
--ms-animation-delay:0.42s;
--o-animation-delay:0.42s;
-animation-delay:0.42s;
-}
-
-#inTurnFadingTextG_4{
--moz-animation-delay:0.49s;
--webkit-animation-delay:0.49s;
--ms-animation-delay:0.49s;
--o-animation-delay:0.49s;
-animation-delay:0.49s;
-}
-
-#inTurnFadingTextG_5{
--moz-animation-delay:0.56s;
--webkit-animation-delay:0.56s;
--ms-animation-delay:0.56s;
--o-animation-delay:0.56s;
-animation-delay:0.56s;
-}
-
-#inTurnFadingTextG_6{
--moz-animation-delay:0.63s;
--webkit-animation-delay:0.63s;
--ms-animation-delay:0.63s;
--o-animation-delay:0.63s;
-animation-delay:0.63s;
-}
-
-#inTurnFadingTextG_7{
--moz-animation-delay:0.7s;
--webkit-animation-delay:0.7s;
--ms-animation-delay:0.7s;
--o-animation-delay:0.7s;
-animation-delay:0.7s;
-}
-
-#inTurnFadingTextG_8{
--moz-animation-delay:0.77s;
--webkit-animation-delay:0.77s;
--ms-animation-delay:0.77s;
--o-animation-delay:0.77s;
-animation-delay:0.77s;
-}
-
-#inTurnFadingTextG_9{
--moz-animation-delay:0.84s;
--webkit-animation-delay:0.84s;
--ms-animation-delay:0.84s;
--o-animation-delay:0.84s;
-animation-delay:0.84s;
-}
-
-#inTurnFadingTextG_10{
--moz-animation-delay:0.91s;
--webkit-animation-delay:0.91s;
--ms-animation-delay:0.91s;
--o-animation-delay:0.91s;
-animation-delay:0.91s;
-}
-
-#inTurnFadingTextG_11{
--moz-animation-delay:0.98s;
--webkit-animation-delay:0.98s;
--ms-animation-delay:0.98s;
--o-animation-delay:0.98s;
-animation-delay:0.98s;
-}
-
-#inTurnFadingTextG_12{
--moz-animation-delay:1.05s;
--webkit-animation-delay:1.05s;
--ms-animation-delay:1.05s;
--o-animation-delay:1.05s;
-animation-delay:1.05s;
-}
-
-#inTurnFadingTextG_13{
--moz-animation-delay:1.12s;
--webkit-animation-delay:1.12s;
--ms-animation-delay:1.12s;
--o-animation-delay:1.12s;
-animation-delay:1.12s;
-}
-
-#inTurnFadingTextG_14{
--moz-animation-delay:1.19s;
--webkit-animation-delay:1.19s;
--ms-animation-delay:1.19s;
--o-animation-delay:1.19s;
-animation-delay:1.19s;
-}
-
-#inTurnFadingTextG_15{
--moz-animation-delay:1.26s;
--webkit-animation-delay:1.26s;
--ms-animation-delay:1.26s;
--o-animation-delay:1.26s;
-animation-delay:1.26s;
-}
-
-#inTurnFadingTextG_16{
--moz-animation-delay:1.33s;
--webkit-animation-delay:1.33s;
--ms-animation-delay:1.33s;
--o-animation-delay:1.33s;
-animation-delay:1.33s;
-}
-
-@-moz-keyframes bounce_inTurnFadingTextG{
-0%{
-color:#d7c490;
-}
-
-100%{
-color:#392c26;
-}
-
-}
-
-@-webkit-keyframes bounce_inTurnFadingTextG{
-0%{
-color:#d7c490;
-}
-
-100%{
-color:#392c26;
-}
-
-}
-
-@-ms-keyframes bounce_inTurnFadingTextG{
-0%{
-color:#d7c490;
-}
-
-100%{
-color:#392c26;
-}
-
-}
-
-@-o-keyframes bounce_inTurnFadingTextG{
-0%{
-color:#d7c490;
-}
-
-100%{
-color:#392c26;
-}
-
-}
-
-@keyframes bounce_inTurnFadingTextG{
-0%{
-color:#d7c490;
-}
-
-100%{
-color:#392c26;
-}
-
-}
-
-</style>
-
-<div id="preloader">
+<!--<div id="preloader">
     <div id="inTurnFadingTextG">
     <div id="inTurnFadingTextG_1" class="inTurnFadingTextG">
     J</div>
@@ -305,12 +82,13 @@ color:#392c26;
     <div id="inTurnFadingTextG_16" class="inTurnFadingTextG">
     S</div>
     </div>
-</div>
+</div>-->
 
 <header class="header">
 
     <div class="u-gridContainer">
         <div class="u-gridRow head-row-1">
+            <div class="u-gridCol4 top-search"><?php do_action('icl_language_selector'); ?><?php get_search_form(); ?></div>
             
         </div>
       <div class="Bot-Nav">
@@ -322,13 +100,13 @@ color:#392c26;
             </a>
         </div>
     	<div class="u-gridRow">
-            <div class="u-gridCol2 show-for-large">
+            <div class="u-gridCol3 show-for-large">
                <a href="/home"> <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png"></a>
             </div>
             
-                <div class="u-gridCol9 dropdown-menu">
+                <div class="u-gridCol8 dropdown-menu">
             		  <?php include 'includes/navigation.php'; ?>
-            	</div>
+            	</div> 
                 
                 <a href="/home"> <img  class="logo show-for-small" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png"></a>
 

@@ -39,8 +39,8 @@ Template Name: Contactpage2
 	
 		<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
 		<?php endwhile; endif; ?>
-	</div>
-</div>-->
+	</div>-->
+</div>
 	
 
 <?php get_footer(); ?>
