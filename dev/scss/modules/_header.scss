@@ -19,25 +19,14 @@
   @include background-image(linear-gradient(to top, #695545, $c-secondary, #695545 ));
 }
 .top-search{
-  div{
-    float:right;
-  }
-  float:right;
-  margin-top:20px;
-  label{display:none;}
-  input{
-    background:none;
-    border: 1px solid $c-gold;
-    color:$c-gold;
-  }
-  #s{
-    border-right:0px;
-    width:60%;
-  }
-  #searchsubmit{
-    border-left:0px;
-    margin-left:-5px;
-  }
+	.tel {
+		display: block;
+		margin-top: 17px;
+		color: $c-gold;
+		font-size: 14px;
+		font-weight: bold;
+	}
+  
 }
 // -------------------------------------
 // Module specific variables

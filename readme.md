@@ -113,3 +113,27 @@ Note: On Windows, one might want to use Console2 instead of the normal cmd promp
 5. Useful links
 ------------
 - [icomoon.io](http://icomoon.io) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+TODO!
+
+# - Lettertype werkt niet overal
+# - Navigatie minder hoog, zoeken en vlaggetjes ernaast
+# - Banner minder hoog
+- Voeg toe aan wensenlijst (met maat)
+# - Klikken op foto geeft lightbox
+- Bij laden schoenen pagina (Etc) titel eerst blanco en niet de eerste schoen
+# - Contact pagina stylen
+# - Social media klikbaar maken

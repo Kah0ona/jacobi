@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/production.css">
     <!-- /build -->
     <link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
     <!-- build:remove:compressed -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js"></script>
     <!-- /build -->
@@ -86,47 +87,54 @@
 
 <header class="header">
 
-    <div class="u-gridContainer">
-        <div class="u-gridRow head-row-1">
-            <div class="u-gridCol4 top-search"><?php do_action('icl_language_selector'); ?><?php get_search_form(); ?></div>
-            
-        </div>
-      <div class="Bot-Nav">
-        <div class="Nav-toggle u-cf">
-            <a class="Navigation-menuToggle" id="js-navCollapse">
-                <svg class="Icon Icon--inline" viewBox="0 0 128 128">
-                    <use xlink:href="#icon-menu2"></use>
-                </svg>
-            </a>
-        </div>
-    	<div class="u-gridRow">
-            <div class="u-gridCol3 show-for-large">
-               <a href="/home"> <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png"></a>
-            </div>
-            
-                <div class="u-gridCol8 dropdown-menu">
-            		  <?php include 'includes/navigation.php'; ?>
-            	</div> 
-                
-                <a href="/home"> <img  class="logo show-for-small" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png"></a>
+	<div class="u-gridContainer">
+	  <div class="Bot-Nav">
+		<div class="Nav-toggle u-cf">
+			<a class="Navigation-menuToggle" id="js-navCollapse">
+				<svg class="Icon Icon--inline" viewBox="0 0 128 128">
+					<use xlink:href="#icon-menu2"></use>
+				</svg>
+			</a>
+		</div>
+		<div class="u-gridRow nav-row">
+			<div class="u-gridCol3  show-for-large">
+			   <a href="/home"> <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png"></a>
+			</div>
 
-        		<div class="Mob-contact-ico">
-        			<a class="Button Button--transparent u-textInverted u-noLine telsvg" href="tel:">
-        				<svg class="Icon Icon--inline" viewBox="0 0 128 128">
-        					<use xlink:href="#icon-phone"></use>
-        				</svg>
-        			</a>
-        		
-                        <a class="Button Button--transparent u-textInverted u-noLine mailsvg" href="mailto:melle@lokaalgevonden.nl">
-        				<svg class="Icon Icon--inline" viewBox="0 0 128 128">
-        					<use xlink:href="#icon-envelope"></use>
-        				</svg>
-        			</a>
-        		</div><!-- header-contact -->
-        	
-        </div>
-      </div>
+			<div class="u-gridCol7 dropdown-menu">
+				  <?php include 'includes/navigation.php'; ?>
+			</div> 
+
+			<div class="u-gridCol2 show-for-large">
+				<div class="top-search">
+						<?php do_action('icl_language_selector'); ?>
+						<span class="tel">010-XXXXXXX</span>
+				</div>
+			</div>
+
+
+
+		</div>
+	  </div>
   </div>
   <div class="header-border-bottom">
   </div>
+
+<!--
+			<a href="/home"> <img  class="logo show-for-small" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png"></a>
+			<div class="Mob-contact-ico">
+				<a class="Button Button--transparent u-textInverted u-noLine telsvg" href="tel:">
+					<svg class="Icon Icon--inline" viewBox="0 0 128 128">
+						<use xlink:href="#icon-phone"></use>
+					</svg>
+				</a>
+
+				<a class="Button Button--transparent u-textInverted u-noLine mailsvg" href="mailto:info@lokaalgevonden.nl">
+					<svg class="Icon Icon--inline" viewBox="0 0 128 128">
+						<use xlink:href="#icon-envelope"></use>
+					</svg>
+				</a>
+			</div> --><!-- header-contact -->
+
+
 </header>

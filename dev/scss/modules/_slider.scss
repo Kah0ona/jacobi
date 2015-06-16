@@ -1,6 +1,8 @@
 .slider-overlay-box{
 	width:100%;
 	position:relative;
+	max-height: 560px;
+	overflow: hidden;
 }
 
 .Slider {

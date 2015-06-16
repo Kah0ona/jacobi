@@ -49,7 +49,12 @@ $background = get_field('background_image', $termToUse);
 	background-image: url('<?php echo $background['url']; ?>');
 }
 </style>
-
+<div class="wishlistform" >
+	<div class="close">&times;</div>
+	<div class="contactform-container">	
+		<?php echo do_shortcode('[gravityform id="2" name="Wenslijst" title="false" description="false" ajax="true"]'); ?>
+	</div>
+</div>
 
 <div class="product-container u-cf" >
 	
@@ -67,53 +72,44 @@ $background = get_field('background_image', $termToUse);
 				<div class="close-button"><a href="javascript:;">X</a></div>
 				
 				<div class="bar-text">
-					<h3>Kwaliteit Jeans</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac suscipit magna, in luctus mauris. 
-						Proin rutrum, erat sit amet suscipit consectetur, est ex tempus tellus, quis bibendum lorem nibh id arcu.
-					 	Nulla tristique metus in magna lobortis, ac congue elit porta. Pellentesque dictum nibh eget erat maximus, eget porttitor 
+					<h3>Onze collectie</h3>
+					<p>
+						Bekijk onze collectie. Laat je wensen weten via de wenslijst, en je ontvangt van ons bericht over de voorraad!
 					</p>
-					<h4>Garantie</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac suscipit magna, in luctus mauris. 
-						Proin rutrum, erat sit amet suscipit consectetur, est ex tempus tellus, quis bibendum lorem nibh id arcu.
-					 	Nulla tristique metus in magna lobortis, ac congue elit porta. Pellentesque dictum nibh eget erat maximus, eget porttitor 
+					<h4>Niet gevonden?</h4>
+					<p>
+						Neem even contact op, en laat ons weten wat je zoekt zodat wij ons assortiment weer kunnen verbeteren.
 					</p>
-					<h4>Garantie</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac suscipit magna, in luctus mauris. 
-						Proin rutrum, erat sit amet suscipit consectetur, est ex tempus tellus, quis bibendum lorem nibh id arcu.
-					 	
-					</p>
-				</div>
+								</div>
 			</div>
 		</div>
 
 		<div class="full-width-gallery-container" >
 			<div class="product-gallery-fade-small">
 				<?php if (have_posts()) : ?>
-					
 					<?php while (have_posts()) : the_post(); ?>
-
 					
 					<?php
 					 $image1 = get_field('foto_1'); 
 					 $image2 = get_field('foto_2'); 
 					 $image3 = get_field('foto_3'); 
 					 $image4 = get_field('foto_4'); 
-					 $merk = get_field('merk'); 
+					 $merk   = get_field('merk'); 
 					 ?>
 				<a href="javascript:;">
 					<div class="product-thumb">
 						<div class="hidden-content">
 							<div class="image-row">
-								<a href="#"><img src="<?php echo $image1['sizes']['medium']; ?>" alt="<?php echo $image1['alt']; ?>"/></a>
-					       		<a href="#"><img src="<?php echo $image2['sizes']['medium']; ?>" alt="<?php echo $image2['alt']; ?>"/></a>
-					       		<a href="#"><img src="<?php echo $image3['sizes']['medium']; ?>" alt="<?php echo $image3['alt']; ?>"/></a>
-					       		<a href="#"><img src="<?php echo $image4['sizes']['medium']; ?>" alt="<?php echo $image4['alt']; ?>"/></a>
+								<a href="#"><img data-large="<?php echo $image1['sizes']['large']; ?>" src="<?php echo $image1['sizes']['medium']; ?>" alt="<?php echo $image1['alt']; ?>"/></a>
+					       		<a href="#"><img data-large="<?php echo $image2['sizes']['large']; ?>" src="<?php echo $image2['sizes']['medium']; ?>" alt="<?php echo $image2['alt']; ?>"/></a>
+					       		<a href="#"><img data-large="<?php echo $image3['sizes']['large']; ?>" src="<?php echo $image3['sizes']['medium']; ?>" alt="<?php echo $image3['alt']; ?>"/></a>
+					       		<a href="#"><img data-large="<?php echo $image4['sizes']['large']; ?>" src="<?php echo $image4['sizes']['medium']; ?>" alt="<?php echo $image4['alt']; ?>"/></a>
 					       	</div>
 							<h5><?php echo $merk ?></h5>
 							<?php the_content(); ?>  
 						</div>
 						<div class="hidden-content-img">
-						    <img src="<?php echo $image1['sizes']['medium']; ?>" alt="<?php echo $image1['alt']; ?>"/>
+						    <img data-large="<?php echo $image1['sizes']['large']; ?>" src="<?php echo $image1['sizes']['medium']; ?>" alt="<?php echo $image1['alt']; ?>"/>
 						</div>
 						<div class="thumb-text"> 
 							<a id="post-<?php the_ID(); ?>">

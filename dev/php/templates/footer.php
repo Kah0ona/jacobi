@@ -31,9 +31,16 @@
 			<div class="u-gridCol2 social">
 				<b>Volg ons op</b>
 				<hr>
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/twit.png">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/facebook.png">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/insta.png">
+				
+				<a href="#">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/twit.png">
+				</a>
+				<a href="#">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/facebook.png">
+				</a>
+				<a href="https://instagram.com/jacobisrotterdam" target="_blank">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/insta.png">
+				</a>
 			</div>
 			<div class="u-gridCol2">
 				<p></p>
