@@ -6,16 +6,14 @@
 			<div class="u-gridCol2">
 				<b>Klantenservice</b>
 				<ul>
-					<li>Bestellen & levering</li>
-					<li>Betalen</li>
-					<li>Retourneren</li>
-					<li>Andere vragen</li>
+					<li><a href="/bestellen-levering">Bestellen & levering</a></li>
+					<li><a href="/over-ons">Over ons</a></li>
 				</ul>
 			</div>
 			<div class="u-gridCol2">
 				<b>Adresgegevens</b>
 				<ul>
-					<li>Jacobi’s Fashion</li>
+					<li>Jacobs Rotterdam</li>
 					<li>Lijnbaan 49 </li>
 					<li>3012 EK</li>
 					<li>Rotterdam</li>
@@ -24,20 +22,13 @@
 			<div class="u-gridCol2">
 				<b>Contact</b>
 				<ul>
-					<li></li>
-					<li></li>
+					<li><a href="mailto:info@jacobs-rotterdam.nl">info@jacobs-rotterdam.nl</a></li>
+					<li><a href="tel:0102231442">010-2231442<a/></li>
 				</ul>
 			</div>
 			<div class="u-gridCol2 social">
 				<b>Volg ons op</b>
 				<hr>
-				
-				<a href="#">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/twit.png">
-				</a>
-				<a href="#">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/facebook.png">
-				</a>
 				<a href="https://instagram.com/jacobisrotterdam" target="_blank">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/insta.png">
 				</a>
@@ -74,6 +65,8 @@
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/google-maps.js"></script>
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.bxslider.js"></script>
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.bxslider.start.js"></script>
+  <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/isotope.js"></script>
+  <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/isotope.start.js"></script>
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/thumb-click.js"></script>
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/swapthumbs.js"></script>
 

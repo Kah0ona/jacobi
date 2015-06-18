@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Homepage
+Template Name: Normale pagina
 */
 ?>
 
@@ -10,19 +10,19 @@ Template Name: Homepage
 		<div class="u-gridContainer dshow-for-large">
 			<div class="u-gridCol2 product-thumb-home">
 				<a href="/kleding_categorieen/jackets/">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/jacket.jpg">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/jacket.png">
 					<div class="thumb-text">Jacket</div>
 				</a> 
 			</div>
 			<div class="u-gridCol2 product-thumb-home">
 				<a href="/kleding_categorieen/sweaters/">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/sweat.jpg">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/sweat.png">
 					<div class="thumb-text">Sweater</div>
 				</a>
 			</div>
 			<div class="u-gridCol2 product-thumb-home">
 				<a href="/kleding_categorieen/jeans/">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/jeans.jpg">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ass.png">
 					<div class="thumb-text">Jeans</div>
 				</a>
 			</div>
@@ -56,7 +56,7 @@ Template Name: Homepage
 					<div class="slide" style="">
 						<div class="slider-box">
 							<h1><?php the_title(); ?></h1>
-							<a href="<?php echo get_field('link'); ?>"><?php the_content(); ?></a>
+							<a href="#"><?php the_content(); ?></a>
 						</div>
 						<img src="<?php echo $image_url; ?>" />
 					</div>
@@ -109,5 +109,24 @@ Template Name: Homepage
 		</div>
 	</div>-->
 </div>
-
+<div class="footer-border-top">
+</div>
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+<div class="u-gridContainer">
+	<div class="u-gridRow gold-text">
+		<h1 class="edit-h1"><?php the_title(); ?></h1>
+		<a class="button-1 u-objRight">Home</a>
+	</div>
+	<hr class="gold-hr">
+	<div class="u-gridRow normalepagina">
+		<div class="u-gridCol4">
+			<?php get_sidebar(); ?>
+		</div>
+		<div class="u-gridCol8">
+			<?php the_content(); ?>
+		</div>
+	</div>
+</div>
+<?php endwhile; endif; ?>
 <?php get_footer(); ?>
+ 

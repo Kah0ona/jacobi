@@ -53,6 +53,7 @@ $background = get_field('background_image', $termToUse);
 	<div class="close">&times;</div>
 	<div class="contactform-container">	
 		<?php echo do_shortcode('[gravityform id="2" name="Wenslijst" title="false" description="false" ajax="true"]'); ?>
+		<i>* Na het ontvangen van uw interesse, zullen wij u contacten per email.</i>
 	</div>
 </div>
 
@@ -74,13 +75,12 @@ $background = get_field('background_image', $termToUse);
 				<div class="bar-text">
 					<h3>Onze collectie</h3>
 					<p>
-						Bekijk onze collectie. Laat je wensen weten via de wenslijst, en je ontvangt van ons bericht over de voorraad!
+						Bekijk onze collectie hiernaast, laat je wensen achter via de wenslijsten wij zullen u contacteren. 					
 					</p>
-					<h4>Niet gevonden?</h4>
-					<p>
-						Neem even contact op, en laat ons weten wat je zoekt zodat wij ons assortiment weer kunnen verbeteren.
-					</p>
-								</div>
+				</div>
+				<div class="bar-text2 brandslist">
+					<!-- auto populated by script -->
+				</div>
 			</div>
 		</div>
 
@@ -96,45 +96,45 @@ $background = get_field('background_image', $termToUse);
 					 $image4 = get_field('foto_4'); 
 					 $merk   = get_field('merk'); 
 					 ?>
-				<a href="javascript:;">
-					<div class="product-thumb">
-						<div class="hidden-content">
-							<div class="image-row">
-								<a href="#"><img data-large="<?php echo $image1['sizes']['large']; ?>" src="<?php echo $image1['sizes']['medium']; ?>" alt="<?php echo $image1['alt']; ?>"/></a>
-					       		<a href="#"><img data-large="<?php echo $image2['sizes']['large']; ?>" src="<?php echo $image2['sizes']['medium']; ?>" alt="<?php echo $image2['alt']; ?>"/></a>
-					       		<a href="#"><img data-large="<?php echo $image3['sizes']['large']; ?>" src="<?php echo $image3['sizes']['medium']; ?>" alt="<?php echo $image3['alt']; ?>"/></a>
-					       		<a href="#"><img data-large="<?php echo $image4['sizes']['large']; ?>" src="<?php echo $image4['sizes']['medium']; ?>" alt="<?php echo $image4['alt']; ?>"/></a>
-					       	</div>
-							<h5><?php echo $merk ?></h5>
-							<?php the_content(); ?>  
-						</div>
-						<div class="hidden-content-img">
-						    <img data-large="<?php echo $image1['sizes']['large']; ?>" src="<?php echo $image1['sizes']['medium']; ?>" alt="<?php echo $image1['alt']; ?>"/>
-						</div>
-						<div class="thumb-text"> 
-							<a id="post-<?php the_ID(); ?>">
-								<a href="javascript:;" 
-								   rel="bookmark"
-								   class="thumb-title" 
-								   title="Permanent Link to <?php the_title_attribute(); ?>">
-									<?php the_title(); ?>
+					<div data-merk="<?php echo $merk; ?>" class="product-thumb product-<?php echo strtolower(str_replace(' ','_', $merk)); ?>">
+						<a href="javascript:;" class="product-thumb-grid">
+							<div class="hidden-content">
+								<div class="image-row">
+									<a href="#"><img data-large="<?php echo $image1['sizes']['large']; ?>" src="<?php echo $image1['sizes']['medium']; ?>" alt="<?php echo $image1['alt']; ?>"/></a>
+									<a href="#"><img data-large="<?php echo $image2['sizes']['large']; ?>" src="<?php echo $image2['sizes']['medium']; ?>" alt="<?php echo $image2['alt']; ?>"/></a>
+									<a href="#"><img data-large="<?php echo $image3['sizes']['large']; ?>" src="<?php echo $image3['sizes']['medium']; ?>" alt="<?php echo $image3['alt']; ?>"/></a>
+									<a href="#"><img data-large="<?php echo $image4['sizes']['large']; ?>" src="<?php echo $image4['sizes']['medium']; ?>" alt="<?php echo $image4['alt']; ?>"/></a>
+								</div>
+								<h5><?php echo $merk ?></h5>
+								<?php the_content(); ?>  
+							</div>
+							<div class="hidden-content-img">
+								<img data-large="<?php echo $image1['sizes']['large']; ?>" src="<?php echo $image1['sizes']['medium']; ?>" alt="<?php echo $image1['alt']; ?>"/>
+							</div>
+							<div class="thumb-text"> 
+								<a id="post-<?php the_ID(); ?>">
+									<a href="javascript:;" 
+									   rel="bookmark"
+									   class="thumb-title" 
+									   title="Permanent Link to <?php the_title_attribute(); ?>">
+										<?php the_title(); ?>
+									</a>
 								</a>
-							</a>
-						</div>
+							</div>
+						</a>
 					</div>
-				</a>
 				<?php endwhile; ?>
-				<nav class="next-prev">
-					<?php previous_posts_link('<div style="float:left;">&laquo;</div>  ') ?>
-					<?php next_posts_link('<div style="float:right;">  &raquo;</div>') ?>
-					
-				</nav>
 				<?php else : ?>
 			
 						
 			
 				<?php endif;?>
 			</div>
+			<nav class="next-prev">
+				<?php previous_posts_link('<div style="float:left;">&laquo;</div>  ') ?>
+				<?php next_posts_link('<div style="float:right;">  &raquo;</div>') ?>
+				
+			</nav>
 		</div>
 	</div>	
 </div>

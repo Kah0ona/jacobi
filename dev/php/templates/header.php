@@ -11,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- Title -->
-    <title>Jacobi's</title>
+    <title><?php wp_title( '|', true, 'right' ); ?></title>
 
     <!-- Mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +21,7 @@
 
     <!-- Favicons -->
     <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" href="<?php echo get_stylesheet_directory_uri(); ?>/apple-touch-icon.png">
+    <link rel="apple-touch-icon-precomposed" href="<?php echo get_stylesheet_directory_uri(); ?>/img/apple-touch-icon.png">
     <!-- build:remove:compressed -->
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/production.css">
     <!-- /build -->
@@ -38,52 +38,6 @@
   </head>
   <body <?php body_class(); ?> >
 
-
-<!--<div id="preloader">
-    <div id="inTurnFadingTextG">
-    <div id="inTurnFadingTextG_1" class="inTurnFadingTextG">
-    J</div>
-    <div id="inTurnFadingTextG_2" class="inTurnFadingTextG">
-    &nbsp;
-    </div>
-    <div id="inTurnFadingTextG_3" class="inTurnFadingTextG">
-    A</div>
-    <div id="inTurnFadingTextG_4" class="inTurnFadingTextG">
-    &nbsp;
-    </div>
-    <div id="inTurnFadingTextG_5" class="inTurnFadingTextG">
-    C</div>
-    <div id="inTurnFadingTextG_6" class="inTurnFadingTextG">
-    &nbsp;
-    </div>
-    <div id="inTurnFadingTextG_7" class="inTurnFadingTextG">
-    O</div>
-    <div id="inTurnFadingTextG_8" class="inTurnFadingTextG">
-    &nbsp;
-    </div>
-    <div id="inTurnFadingTextG_9" class="inTurnFadingTextG">
-    B</div>
-    <div id="inTurnFadingTextG_10" class="inTurnFadingTextG">
-    &nbsp;
-    </div>
-    <div id="inTurnFadingTextG_11" class="inTurnFadingTextG">
-    I</div>
-    <div id="inTurnFadingTextG_12" class="inTurnFadingTextG">
-    &nbsp;
-    </div>
-    <div id="inTurnFadingTextG_13" class="inTurnFadingTextG">
-    &nbsp;
-    </div>
-    <div id="inTurnFadingTextG_14" class="inTurnFadingTextG">
-    &#039;
-    </div>
-    <div id="inTurnFadingTextG_15" class="inTurnFadingTextG">
-    &nbsp;
-    </div>
-    <div id="inTurnFadingTextG_16" class="inTurnFadingTextG">
-    S</div>
-    </div>
-</div>-->
 
 <header class="header">
 
@@ -108,7 +62,7 @@
 			<div class="u-gridCol2 show-for-large">
 				<div class="top-search">
 						<?php do_action('icl_language_selector'); ?>
-						<span class="tel">010-XXXXXXX</span>
+						<span class="tel"><a href="tel:0102231442">010-2231442</a></span>
 				</div>
 			</div>
 

@@ -4,6 +4,12 @@
   	padding:20px;
  	background-image: url(../img/pattern.png);
   	position: relative;
+
+
+	a {
+		color: $c-gold !important;
+		font-weight: bold;
+	}
 }
 
 // RESPONSIVE FOOTER
@@ -32,4 +38,17 @@
 	top:0px;
 	position: relative;
 	z-index:999;
+}
+
+
+.menu-footermenu-container select {
+	background-color: $c-gold !important;
+	color: black !important;
+	border: 1px solid black;
+}
+
+.tel {
+	a {
+		color: $c-gold !important;
+	}
 }

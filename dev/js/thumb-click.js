@@ -1,6 +1,7 @@
 jQuery(document).ready(function($) {  
+	var currentImageSet = [];
+	var currentIndex = 0;
 
-// als je klikt op .product-thumb
 	$('.product-thumb').click(function(evt){
 		//run this code
 		//dan pak de inhoud uit die child div genaamd 'hidden-content'
@@ -16,16 +17,23 @@ jQuery(document).ready(function($) {
 
 		$('.bar.left h3').html(theTitle);
 		$('.bar-text .spec-img').click(function(evt) {
-			var elt = $(evt.currentTarget);
-			var eltImg = elt.find('img');
-			var theImageFull = eltImg.attr('data-large');
-			$('body').append('<div class="product-lightbox"><img src="'+theImageFull+'" />"</div>');
+			if($(window).innerWidth() >= 480) {
+				var elt = $(evt.currentTarget);
+				var eltImg = elt.find('img');
+				var theImageFull = eltImg.attr('data-large');
+				var index = 0;
+				currentImageSet = [];
+				$('.spec-text .image-row img').each(function(){
+					currentImageSet.push($(this).attr('data-large'));
+					if($(this).attr('data-large') == theImageFull) {
+						currentIndex = index;
+					}
+					index++;
+				});
+				$('body').append('<div class="product-lightbox"><div class="close">&times;</div><img src="'+theImageFull+'" /><div class="next">volgende</div><div class="prev">vorige</div>');
+			}
 		});
 
-		$('body').on('click', '.product-lightbox', function(evt) {
-			var elt = $(evt.currentTarget);
-			elt.remove();
-		});
 	});
 
 	$('body').on('click', '.wishlist', function(evt) {
@@ -39,6 +47,24 @@ jQuery(document).ready(function($) {
 		$('#input_2_7').val(img);
 		$('.wishlistform').show();
 
+	});
+	$('body').on('click', '.product-lightbox .next', function(evt) {
+		var total = currentImageSet.length;	
+		currentIndex = (currentIndex + 1)%total;
+		var img = currentImageSet[currentIndex];
+		$('.product-lightbox > img').attr('src', img);
+	});
+	$('body').on('click', '.product-lightbox .prev', function(evt) {
+		var total = currentImageSet.length;	
+		currentIndex = currentIndex == 0 ? total - 1 : currentIndex-1;
+		var img = currentImageSet[currentIndex];
+		$('.product-lightbox > img').attr('src', img);
+	});
+
+	$('body').on('click', '.product-lightbox .close', function(evt) {
+		var elt0 = $(evt.currentTarget);
+		var elt = elt0.parents('.product-lightbox'); 
+		elt.remove();
 	});
 
 	$('.wishlistform .close').click(function(evt) {

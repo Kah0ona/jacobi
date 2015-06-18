@@ -56,7 +56,7 @@ Template Name: Ladningspagina
 					<div class="slide" style="">
 						<div class="slider-box">
 							<h1><?php the_title(); ?></h1>
-							<a href="#"><?php the_content(); ?></a>
+							<a href="<?php echo get_field('link'); ?>"><?php the_content(); ?></a>
 						</div>
 						<img src="<?php echo $image_url; ?>" />
 					</div>
@@ -65,49 +65,6 @@ Template Name: Ladningspagina
 			}
 		?>
 	</div>
-<!--	<div class="footer-border-top show-for-small">
-		</div>
-	<div class="background-gradient">
-		<div class="u-gridContainer show-for-small">
-			
-			<div class="u-gridRow">
-				<div class="u-gridCol3">
-					<a href="#">
-						<div class="product-thumb-home">
-							<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/jacket.png">
-							<div class="thumb-text">Jacket</div>
-						</div>
-					</a>
-				</div>
-				<div class="u-gridCol3">
-					<a href="#">
-						<div class="product-thumb-home">
-							<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/sweat.png">
-							<div class="thumb-text">Sweater</div>
-						</div>
-					</a>
-				</div>
-				<div class="u-gridCol3">
-					<a href="#">
-						<div class="product-thumb-home">
-							<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ass.png">
-							<div class="thumb-text">Jeans</div>
-						</div>
-					</a>
-				</div>
-				<div class="u-gridCol3">
-					<a href="#">
-						<div class="product-thumb-home">
-							<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/shoe.png">
-							<div class="thumb-text">Shoes</div>
-						</div>
-					</a>
-				</div>
-
-			</div>
-
-		</div>
-	</div>-->
 </div>
 <div class="footer-border-top">
 </div>

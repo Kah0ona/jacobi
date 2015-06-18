@@ -7,7 +7,7 @@ jQuery(document).ready(function($) {
     //slideWidth: 1200,
     slideMargin: 0,
     // captions: true,
-    pause: 5000,
+    pause: 6000,
     auto: true,
     speed: 1000,
     infiniteLoop: true,
