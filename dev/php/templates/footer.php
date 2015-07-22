@@ -7,7 +7,7 @@
 				<b>Klantenservice</b>
 				<ul>
 					<li><a href="/bestellen-levering">Bestellen & levering</a></li>
-					<li><a href="/over-ons">Over ons</a></li>
+					<li><a href="/over-ons">About us</a></li>
 				</ul>
 			</div>
 			<div class="u-gridCol2">

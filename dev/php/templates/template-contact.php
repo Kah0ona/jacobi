@@ -18,11 +18,11 @@ Template Name: Contactpage
 						</div>
 						<div class="adress u-gridCol4">
 							<div class="adress-info">
-								<p><strong>Jacobi's Rotterdam</strong></p>
+								<p><strong>Jacobs Rotterdam</strong></p>
 								<p>Lijnbaan 49</p>
 								<p>3012 EK Rotterdam</p>
-								<p>Email: info@XXXXXXXX</p>
-								<p>Tel: </p>
+								<p>Email: <a href="mailto:info@jacobs-rotterdam.nl" style="color:#d7c490 !important;">info@jacobs-rotterdam.nl</a></p>
+								<p>Tel: <a href="tel:0102231442" style="color:#d7c490 !important;">010-2231442</a></p>
 							</div>
 							<div class="contactform-container">						
 								<p class="contact-page-p">

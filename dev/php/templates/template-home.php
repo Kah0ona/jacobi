@@ -16,7 +16,7 @@ Template Name: Homepage
 			</div>
 			<div class="u-gridCol2 product-thumb-home">
 				<a href="/kleding_categorieen/sweaters/">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/sweat.jpg">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/sweaty.jpg">
 					<div class="thumb-text">Sweater</div>
 				</a>
 			</div>
@@ -28,7 +28,7 @@ Template Name: Homepage
 			</div>
 			<div class="u-gridCol2 product-thumb-home">
 				<a href="/kleding_categorieen/schoenen/">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/shoe.png">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/shoety.jpg">
 					<div class="thumb-text">Shoes</div>
 				</a>
 			</div>

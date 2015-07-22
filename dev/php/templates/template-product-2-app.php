@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Product-page-2
+Template Name: Product-page-app
 */
 ?>
 
@@ -18,15 +18,17 @@ Template Name: Product-page-2
 				<div class="bar black">
 					<div class="bar-text for-content">
 						<?php the_content(); ?>
+						<a href="#" class="button"><img style="width:40%; margin-left:25px;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/play.png"></a>
 					<div class="bar-image">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/henkie.jpg">
+						<img style="width:50%; float:left;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/qr-code.png">
+						<img style="width:50%; float:left; margin-top:-75px;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/screenshot.png">
 					</div>
 					</div>
 
 				</div>
 
 			</div>
-		</div>
+		</div> 
 
 	
 </div>

@@ -57,12 +57,15 @@
 
 			<div class="u-gridCol7 dropdown-menu">
 				  <?php include 'includes/navigation.php'; ?>
+				  <a href="/home"> <img  class="logo show-for-small" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png"></a>
 			</div> 
 
 			<div class="u-gridCol2 show-for-large">
 				<div class="top-search">
-						<?php do_action('icl_language_selector'); ?>
+					<!--	<?php do_action('icl_language_selector'); ?>-->
 						<span class="tel"><a href="tel:0102231442">010-2231442</a></span>
+						<span class="tel" style="margin-top:5px;"><a href="mailto:info@jacobs-rotterdam.nl">info@jacobs-rotterdam.nl</a></span>
+						
 				</div>
 			</div>
 
@@ -74,8 +77,8 @@
   <div class="header-border-bottom">
   </div>
 
-<!--
-			<a href="/home"> <img  class="logo show-for-small" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png"></a>
+
+			
 			<div class="Mob-contact-ico">
 				<a class="Button Button--transparent u-textInverted u-noLine telsvg" href="tel:">
 					<svg class="Icon Icon--inline" viewBox="0 0 128 128">
@@ -88,7 +91,7 @@
 						<use xlink:href="#icon-envelope"></use>
 					</svg>
 				</a>
-			</div> --><!-- header-contact -->
+			</div><!-- header-contact -->
 
 
 </header>

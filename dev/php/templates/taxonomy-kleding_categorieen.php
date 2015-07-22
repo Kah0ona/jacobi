@@ -58,10 +58,13 @@ $background = get_field('background_image', $termToUse);
 </div>
 
 <div class="product-container u-cf" >
-	
+	 
 	<div class="bar show-for-small">
 		<h3><?php the_title(); ?></h3>
 	</div>
+<!--	<div class="brandslist show-for-small u-cf">
+	
+	</div>-->
 	<div class="gradient-overlay"></div>
 	<div class="product-wrapper">
 
@@ -73,9 +76,9 @@ $background = get_field('background_image', $termToUse);
 				<div class="close-button"><a href="javascript:;">X</a></div>
 				
 				<div class="bar-text">
-					<h3>Onze collectie</h3>
-					<p>
-						Bekijk onze collectie hiernaast, laat je wensen achter via de wenslijsten wij zullen u contacteren. 					
+					
+					<p style="font-size:16px;">
+						Bekijk onze collectie hiernaast, laat je wensen achter via de wenslijst en wij zullen u contacteren. 					
 					</p>
 				</div>
 				<div class="bar-text2 brandslist">

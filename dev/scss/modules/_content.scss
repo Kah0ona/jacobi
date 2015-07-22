@@ -512,8 +512,41 @@
 	min-height:782px;
 	position:relative;
 }
+.bestel{
+	background-image: url(../img/shoeda.jpg);
+}
+.slider-overlay-box{
+	width:100%;
+	position:relative;
+	max-height: 560px;
+	overflow: hidden;
+}
+.for-content{
+	width:500px;
+	p{
+		font-size: 16px;
+		color: $c-secondary;
+	}
+	li{
+		font-size: 16px;
+		color: $c-secondary;
+		line-height: 20px;
+	}
+
+}
+.wrap-for-content{
+	width:45%;
+	display:block !important;
+}
+.bar-image{
+	img{ 
+		width:100%;
+		float:right;
+	}
+}
+
 .Content-text{
-	z-index:999;
+	z-index:999; 
 	position:relative;
 }
 #input_1_1{
@@ -539,10 +572,22 @@ width:100%
 			margin-top: -300px;
 		}
 	}
+	.slider-overlay-box{
+	width:100%;
+	position:relative;
+	max-height: 660px;
+	overflow: hidden;
+}
 }
 @media all and (max-width:1260px){
 	.product-thumb{
 		width:22%;
+	}
+	.wrap-for-content{
+		width:65%;
+		.bar-text{
+			width:450px;
+		}
 	}
 	.bar-text{
 		width:280px;
@@ -594,6 +639,26 @@ width:100%
 	.contact-g{
 		bottom:12.7%;
 	}
+	.show-for-small{
+		.hide-me-on-mobile{
+			display: block;
+			ul{
+				margin-left:18px;
+				margin-right: -10px;
+			}
+			li{
+				width:45%; 
+				float:left;
+				margin-right:10px;
+			}
+			li:last-of-type{
+				margin-top:5px;
+			}
+			h3{
+				display:none;
+			}
+		}
+	}
 }
 @media all and (max-width:890px){
 	.full-width-bar-container{
@@ -601,6 +666,17 @@ width:100%
 		position:fixed;
 		width:100%;
 		z-index: 999;
+	}
+	.wrap-for-content{
+		position: relative !important;
+		//width:65%;
+		.left{
+			display: block;
+			text-align: center;
+		}
+		.bar-text{
+			width:100%;
+		}
 	}
 	.close-button{
 		display: block !important; 
@@ -671,8 +747,9 @@ width:100%
 @media all and (max-width:540px){
 	.product-thumb{
 		width:46%;
+		visibility: visible !important; 
 	}
-	.product-thumb-home {
+	.product-thumb-home{
 		visibility: hidden;
 	}
 	.spec-img{
