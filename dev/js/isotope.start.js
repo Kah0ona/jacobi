@@ -41,8 +41,9 @@ jQuery(window).load(function(){
 	el += "</ul></div>";
 
 	$('.brandslist').append(el);
+    $('.brandslistmobile').append(el);
 
-	$('body').on('click', '.brandslist ul li', function(evt){ 
+	$('body').on('click', '.brandslist ul li, .brandslistmobile ul li', function(evt){ 
 		var li = $(evt.currentTarget);
 		$grid.isotope({
 			'filter' : li.attr('data-filter')

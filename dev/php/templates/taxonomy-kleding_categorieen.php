@@ -62,9 +62,9 @@ $background = get_field('background_image', $termToUse);
 	<div class="bar show-for-small">
 		<h3><?php the_title(); ?></h3>
 	</div>
-<!--	<div class="brandslist show-for-small u-cf">
+	<div class="brandslistmobile show-for-small u-cf">
 	
-	</div>-->
+	</div>
 	<div class="gradient-overlay"></div>
 	<div class="product-wrapper">
 

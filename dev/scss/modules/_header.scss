@@ -9,7 +9,7 @@
   background:#392c26;
   background-image: url(../img/pattern.png);
   position: relative;
-  z-index: 99999;
+  z-index: 998; //niet hoger, dan gaat de popup van wenslijst er niet overheen.
 }
 .head-row-1{
   height:85px;
